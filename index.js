@@ -41,6 +41,7 @@ var server = app.listen(8081, function () {
    var host = server.address().address
    var port = server.address().port
    
+<<<<<<< HEAD
    console.log("Example app listening at http://%s:%s", host, por
 
    app.get('/', function (req, res) {
@@ -48,3 +49,15 @@ var server = app.listen(8081, function () {
     const userCount = 10;
     res.send(`Hello GET. Users are: ${userCount}`);
  })
+=======
+   console.log("Example app listening at http://%s:%s", host, port
+
+
+
+app.get('/', function (req, res) {
+    console.log("Got a GET request for the homepage");
+    const userCount = Math.ceil(Math.random() * 100);
+    res.send(`Hello GET. Users are: ${userCount}`);
+ })
+
+>>>>>>> feature2
